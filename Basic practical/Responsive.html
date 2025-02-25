@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            background-color: white;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: blue;
+            padding: 15px 20px;
+            color:white;
+        }
+        .logo{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .nav-links{
+            list-style: none;
+            display: flex;
+        }
+        .nav-links lib{
+            margin: 0 15px;
+        }
+        .nav-links a {
+         text-decoration: none;
+         color: white;
+         font-size: 1rem;
+         transition: 0.3s;
+
+        }
+        .nav-links a:hover{
+            color: yellowgreen;
+        }
+        .hamberger{
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamberger span{
+            background-color: white;
+            width: 25px;
+            height: 3px;
+            margin: 4px;
+            transition: 0.3s;
+        }
+        /* Responsive styles */
+        @media(max-width:768px){
+            .nav-links{
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: brown;
+                text-align: center;
+                padding: 10px 0;
+            }
+        
+        .nav-links.active{
+            display: flex;
+        }
+        .hamberger{
+            display: flex;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MyBrand</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamberger">
+                <span></span>
+                <span></span>
+                <span></span>
+                    </div>
+    </nav>
+    
+</body>
+</html>
