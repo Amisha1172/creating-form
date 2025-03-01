@@ -3,60 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: antiquewhite;
+}
 h1{
     font-family: 'Courier New', Courier, monospace;
-    color: black;
+    color: palevioletred;
     text-align: center;
 }
-.navbar{
-    display: flex;
-    justify-content: space-around;
+.navs{
     background-color: pink;
+    display: flex;
+    justify-content: space-between;
     padding: 25px;
 }
-ul{
+.list-iterms{
     display: flex;
-    color: black;
 }
 li{
-list-style: none;
-padding: 0 90px;
-cursor: pointer
-
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding: 0 30px;
+    list-style-type: none;
+}
+li:hover{
+    background-color: red;
+    color:wheat;
+    font-size: smaller;
+}
+.buttons{
+    background-color: black;
+    color: white;
+    width: 5vw;
 }
 h2{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-weight: bold;
-    color: black;
-}
-.headding{
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
-    font-style: italic;
-}
-.headding1{
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-weight: bolder;
-    color: black;
+    font-size: 50px;
 }
 .a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+.first-page{
+    height: 40vh;
+    width: 50vw;
+    border: 2px solid wheat;
     display: flex;
-    border: 2px solid wheat;
-    padding: 10px;
-    /* width: 80vw; */
 }
-/*
-.b{
-    border: 2px solid wheat;
-    padding: 10px;
+.article-section{
+    background-color: white;
 }
-.c{
-    border: 2px solid wheat;
-} */
-aside{
-    /* display: inline-block; */
-    /* text-align: end; */
-    background-color: palevioletred;
+h5{
+    text-align: center;
+}
+.second-page{
+    background-color: pink;
+    height: 40vh;
+    width: 10vw;
+    /* display: flex; */
+}
+.aside-section{
+    background-color: pink;
 }
